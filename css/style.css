@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #606c38;
+  display: flex;
+  justify-content: flex-end;
+}
+.photo {
+  background-color: #f5f5f5;
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+}
+.image {
+  margin: auto;
+  object-fit: cover;
+  max-width: 85%;
+  max-height: 85%;
+}
+.main {
+  padding-top: 50px;
+  padding-right: 80px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50vw;
+}
+.icons {
+  margin-left: auto;
+  width: 30vw;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10vh;
+}
+.text,
+.title {
+  text-align: right;
+}
+.title {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 8vw;
+  color: #f5f5f5;
+}
+.text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 4vw;
+  color: #f5f5f5;
+}
+.underline {
+  text-decoration: underline;
+}
+.actions {
+  display: flex;
+  justify-content: space-around;
+}
+.actionsItem {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.2vw;
+  text-align: center;
+  color: #f5f5f5;
+}
+button {
+  background-color: #606c38;
+  border: 0;
+}
+
+.title.pers {
+  font-size: 5vw;
+}
+.underlineEl {
+  border-bottom: 4px solid #f5f5f5;
+}
+.text.pers {
+  font-size: 3vw;
+}
+.text.act {
+  font-size: 3vw;
+}
+.title.act {
+  font-size: 7vw;
+}
