@@ -49,14 +49,14 @@ body {
   font-family: "Ubuntu", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 8vw;
+  font-size: 16vh;
   color: #f5f5f5;
 }
 .text {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 900;
-  font-size: 4vw;
+  font-size: 10vh;
   color: #f5f5f5;
 }
 .underline {
@@ -80,17 +80,17 @@ button {
 }
 
 .title.pers {
-  font-size: 5vw;
+  font-size: 10vh;
 }
 .underlineEl {
   border-bottom: 2px solid #f5f5f5;
 }
 .text.pers {
-  font-size: 3vw;
+  font-size: 6vh;
 }
 .text.act {
-  font-size: 3vw;
+  font-size: 6vh;
 }
 .title.act {
-  font-size: 7vw;
+  font-size: 17vh;
 }
