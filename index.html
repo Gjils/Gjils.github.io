@@ -47,67 +47,68 @@
       </div>
     </div>
     <div class="photo">
-      <img src="img/sirion.png" alt="Sirion" class="image" />
+      <img src="img/sirion.png" alt="sirion" class="image" />
     </div>
-    <script>
-      function normalize() {
-        var title = document.querySelector(".title");
-        title.innerHTML = "Sirion 17";
-        title.classList.remove("pers");
-        var text = document.querySelector(".text");
-        text.classList.remove("pers");
-        title.classList.remove("act");
-        text.classList.remove("act");
-        var personality = document.querySelector(".personality");
-        var activity = document.querySelector(".activity");
-        personality.classList.remove("underlineEl");
-        var activity = document.querySelector(".activity");
-        activity.classList.remove("underlineEl");
-
-        text.innerHTML = "Гений и <span class='underline'>бог</span>";
-
-        document.querySelector(".image").src = "img/sirion.png";
-      }
-      function personality() {
-        var title = document.querySelector(".title");
-        if (title.classList.contains("pers")) {
-          normalize();
-        } else {
-          title.innerHTML = "Глеб Шульдяков";
-          title.classList.add("pers");
-          var personality = document.querySelector(".personality");
-          var activity = document.querySelector(".activity");
-          personality.classList.add("underlineEl");
-          activity.classList.remove("underlineEl");
+      <script>
+        function normalize() {
+          var title = document.querySelector(".title");
+          title.innerHTML = "Sirion 17";
+          title.classList.remove("pers");
           var text = document.querySelector(".text");
-          text.innerHTML =
-            "настоящее имя сириона. Ему 21 год. В свои года он окончил МФТИ по специальности прикладная физика и математика";
-          text.classList.add("pers");
-          document.querySelector(".image").src = "img/sirion_pers.png";
+          text.classList.remove("pers");
           title.classList.remove("act");
           text.classList.remove("act");
-        }
-      }
-      function activity() {
-        var title = document.querySelector(".title");
-        if (title.classList.contains("act")) {
-          normalize();
-        } else {
-          title.innerHTML = "300 000";
-          title.classList.add("act");
           var personality = document.querySelector(".personality");
           var activity = document.querySelector(".activity");
           personality.classList.remove("underlineEl");
-          activity.classList.add("underlineEl");
-          var text = document.querySelector(".text");
-          text.innerHTML =
-            "подписчиков в сумме на всех аккаунтах Глеба в тик-ток. Он имеет близкие отношения с популярными тик-токерами";
-          text.classList.add("act");
-          document.querySelector(".image").src = "img/sirion_act.png";
-          title.classList.remove("pers");
-          text.classList.remove("pers");
+          var activity = document.querySelector(".activity");
+          activity.classList.remove("underlineEl");
+
+          text.innerHTML = "Гений и <span class='underline'>бог</span>";
+
+          document.querySelector(".image").src = "img/sirion.png";
         }
-      }
-    </script>
+        function personality() {
+          var title = document.querySelector(".title");
+          if (title.classList.contains("pers")) {
+            normalize();
+          } else {
+            title.innerHTML = "Глеб Шульдяков";
+            title.classList.add("pers");
+            var personality = document.querySelector(".personality");
+            var activity = document.querySelector(".activity");
+            personality.classList.add("underlineEl");
+            activity.classList.remove("underlineEl");
+            var text = document.querySelector(".text");
+            text.innerHTML =
+              "настоящее имя сириона. Ему 21 год. В свои года он окончил МФТИ по специальности прикладная физика и математика";
+            text.classList.add("pers");
+            document.querySelector(".image").src = "img/sirion_pers.png";
+            title.classList.remove("act");
+            text.classList.remove("act");
+          }
+        }
+        function activity() {
+          var title = document.querySelector(".title");
+          if (title.classList.contains("act")) {
+            normalize();
+          } else {
+            title.innerHTML = "300 000";
+            title.classList.add("act");
+            var personality = document.querySelector(".personality");
+            var activity = document.querySelector(".activity");
+            personality.classList.remove("underlineEl");
+            activity.classList.add("underlineEl");
+            var text = document.querySelector(".text");
+            text.innerHTML =
+              "подписчиков в сумме на всех аккаунтах Глеба в тик-ток. Он имеет близкие отношения с популярными тик-токерами";
+            text.classList.add("act");
+            document.querySelector(".image").src = "img/sirion_act.png";
+            title.classList.remove("pers");
+            text.classList.remove("pers");
+          }
+        }
+      </script>
+    </div>
   </body>
 </html>
