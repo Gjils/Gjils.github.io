@@ -103,7 +103,7 @@ button {
     flex-direction: column-reverse;
   }
   .photo {
-    padding: 10vh 0;
+    padding: 5vh 0;
     width: 100vw;
     height: auto;
   }
@@ -117,6 +117,7 @@ button {
     height: auto;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 10vw;
   }
   .icon {
     min-width: 10vw;
@@ -131,12 +132,14 @@ button {
   }
   .text.pers {
     font-size: 4vh;
+    font-weight: 300;
   }
   .title.act {
     font-size: 10vh;
   }
   .text.act {
     font-size: 4vh;
+    font-weight: 300;
   }
   .text {
     font-size: 4vh;

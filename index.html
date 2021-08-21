@@ -1,114 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sirion 17</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <div class="main">
-      <div class="top">
-        <div class="icons">
-          <a href="https://www.tiktok.com/@sirion1734?lang=ru-RU"
-            ><img src="icons/Tik-Tok.svg" alt="Tik Tok" class="icon"
-          /></a>
-          <a href="https://www.instagram.com/sirion34/"
-            ><img src="icons/Instagram.svg" alt="Instagram" class="icon"
-          /></a>
-          <a href="https://t.me/sirion17"
-            ><img src="icons/Telegram.svg" alt="Telegram" class="icon"
-          /></a>
-          <a href="https://vk.com/phoenix228"
-            ><img src="icons/Vkontakte.svg" alt="Vkontakte" class="icon"
-          /></a>
-        </div>
-        <div class="title">Sirion 17</div>
-        <div class="text">Гений и <span class="underline">бог</span></div>
-      </div>
-      <div class="actions">
-        <button class="personality">
-          <div class="actionsItem" onclick="personality()">Личность</div>
-        </button>
-        <button class="activity">
-          <div class="actionsItem" onclick="activity()">Активность</div>
-        </button>
-      </div>
-    </div>
-    <div class="photo">
-      <img src="img/sirion.png" alt="sirion" class="image" />
-    </div>
-      <script>
-        function normalize() {
-          var title = document.querySelector(".title");
-          title.innerHTML = "Sirion 17";
-          title.classList.remove("pers");
-          var text = document.querySelector(".text");
-          text.classList.remove("pers");
-          title.classList.remove("act");
-          text.classList.remove("act");
-          var personality = document.querySelector(".personality");
-          var activity = document.querySelector(".activity");
-          personality.classList.remove("underlineEl");
-          var activity = document.querySelector(".activity");
-          activity.classList.remove("underlineEl");
 
-          text.innerHTML = "Гений и <span class='underline'>бог</span>";
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sirion 17</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
 
-          document.querySelector(".image").src = "img/sirion.png";
-        }
-        function personality() {
-          var title = document.querySelector(".title");
-          if (title.classList.contains("pers")) {
-            normalize();
-          } else {
-            title.innerHTML = "Глеб Шульдяков";
-            title.classList.add("pers");
-            var personality = document.querySelector(".personality");
-            var activity = document.querySelector(".activity");
-            personality.classList.add("underlineEl");
-            activity.classList.remove("underlineEl");
-            var text = document.querySelector(".text");
-            text.innerHTML =
-              "настоящее имя сириона. Ему 21 год. В свои года он окончил МФТИ по специальности прикладная физика и математика";
-            text.classList.add("pers");
-            document.querySelector(".image").src = "img/sirion_pers.png";
-            title.classList.remove("act");
-            text.classList.remove("act");
-          }
-        }
-        function activity() {
-          var title = document.querySelector(".title");
-          if (title.classList.contains("act")) {
-            normalize();
-          } else {
-            title.innerHTML = "300 000";
-            title.classList.add("act");
-            var personality = document.querySelector(".personality");
-            var activity = document.querySelector(".activity");
-            personality.classList.remove("underlineEl");
-            activity.classList.add("underlineEl");
-            var text = document.querySelector(".text");
-            text.innerHTML =
-              "подписчиков в сумме на всех аккаунтах Глеба в тик-ток. Он имеет близкие отношения с популярными тик-токерами";
-            text.classList.add("act");
-            document.querySelector(".image").src = "img/sirion_act.png";
-            title.classList.remove("pers");
-            text.classList.remove("pers");
-          }
-        }
-      </script>
+<body>
+  <div class="main">
+    <div class="top">
+      <div class="icons">
+        <a href="https://www.tiktok.com/@sirion1734?lang=ru-RU"><img src="icons/Tik-Tok.svg" alt="Tik Tok"
+            class="icon" /></a>
+        <a href="https://www.instagram.com/sirion34/"><img src="icons/Instagram.svg" alt="Instagram" class="icon" /></a>
+        <a href="https://t.me/sirion17"><img src="icons/Telegram.svg" alt="Telegram" class="icon" /></a>
+        <a href="https://vk.com/phoenix228"><img src="icons/Vkontakte.svg" alt="Vkontakte" class="icon" /></a>
+      </div>
+      <div class="title">Sirion 17</div>
+      <div class="text">Гений и <span class="underline">бог</span></div>
     </div>
-  </body>
+    <div class="actions">
+      <button class="personality">
+        <div class="actionsItem" onclick="personality()">Личность</div>
+      </button>
+      <button class="activity">
+        <div class="actionsItem" onclick="activity()">Активность</div>
+      </button>
+    </div>
+  </div>
+  <div class="photo">
+    <img src="img/sirion.png" alt="sirion" class="image" />
+  </div>
+  <script>
+    function normalize() {
+      var title = document.querySelector(".title");
+      title.innerHTML = "Sirion 17";
+      title.classList.remove("pers");
+      var text = document.querySelector(".text");
+      text.classList.remove("pers");
+      title.classList.remove("act");
+      text.classList.remove("act");
+      var personality = document.querySelector(".personality");
+      var activity = document.querySelector(".activity");
+      personality.classList.remove("underlineEl");
+      var activity = document.querySelector(".activity");
+      activity.classList.remove("underlineEl");
+
+      text.innerHTML = "Гений и <span class='underline'>бог</span>";
+
+      document.querySelector(".image").src = "img/sirion.png";
+    }
+    function personality() {
+      var title = document.querySelector(".title");
+      if (title.classList.contains("pers")) {
+        normalize();
+      } else {
+        title.innerHTML = "Глеб Шульдяков";
+        title.classList.add("pers");
+        var personality = document.querySelector(".personality");
+        var activity = document.querySelector(".activity");
+        personality.classList.add("underlineEl");
+        activity.classList.remove("underlineEl");
+        var text = document.querySelector(".text");
+        text.innerHTML =
+          "настоящее имя сириона. Ему 21 год. В свои года он окончил МФТИ по специальности прикладная физика и математика";
+        text.classList.add("pers");
+        document.querySelector(".image").src = "img/sirion_pers.png";
+        title.classList.remove("act");
+        text.classList.remove("act");
+      }
+    }
+    function activity() {
+      var title = document.querySelector(".title");
+      if (title.classList.contains("act")) {
+        normalize();
+      }
+      else {
+        title.innerHTML = "300 000";
+        title.classList.add("act");
+        var personality = document.querySelector(".personality");
+        var activity = document.querySelector(".activity");
+        personality.classList.remove("underlineEl");
+        activity.classList.add("underlineEl");
+        var text = document.querySelector(".text");
+        text.innerHTML =
+          "подписчиков в сумме на всех аккаунтах Глеба в тик-ток. Он имеет близкие отношения с популярными тик-токерами";
+        text.classList.add("act");
+        document.querySelector(".image").src = "img/sirion_act.png";
+        title.classList.remove("pers");
+        text.classList.remove("pers");
+      }
+    }
+  </script>
+  </div>
+</body>
+
 </html>
